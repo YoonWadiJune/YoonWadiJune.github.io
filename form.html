@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+</head>
+<body>
+    <h1>Login Form</h1>
+    <form action="check.php" method="get">
+        <input type="text" name="username" placeholder="Full Name" minlength="10" maxlength="50" size="30"><br>
+        <input type="Email" name="user_email" placeholder="User Email"><br>
+        <input type="password" name="user_password" placeholder="Enter Password" minlength="8" maxlength="30"><br>
+        <input type="submit">
+    </form>
+
+    <h2>Registration</h2>
+    <form action="register.php" method="get" enctype="multipart/form-data">
+        <input type="hidden" name="user_id" value="45">
+        <input type="text" name="user_name" value="June" readonly="readonly"><br> 
+        <textarea name="address" placeholder="Enter Address" id="" cols="30" rows="10" required="required"></textarea>
+        <br>
+        <input type="radio" name="gender" value="male" id="male" checked="checked"><lable for="male">Male</lable>
+        <input type="radio" name="gender" value="female" id="female"><lable for="female">Female</lable><br>
+        Interests: <br>
+        <input type="checkbox" name="php" id="php" value="php" checked="checked"><lable for="php">PHP</lable>
+        <input type="checkbox" name="js" id="js" value="js"><label for="js">JS</label>
+        <input type="checkbox" name="css" id="css" value="css"><label for="css">CSS</label><br>
+        Education:<br>
+        <select name="education" id="" multiple="multiple">
+            <option value="1">Diploma</option>
+            <option value="2">Bachelor</option>
+            <option value="3" selected="selected">Master</option>
+        </select>
+        <input type="date" name="dob"><br><br>
+        <input type="file" name="photo"><br><br>
+        <input type="number" name="age" placeholder="Enter Your Age" min="18" max="40"><br><br>
+        <input type="number" name="height" placeholder="Enter Your Height" step="0.01"><br><br>
+        <input type="button" value="ClickMe!">
+        <button>Click Me!</button>
+        <input type="submit" value="Register">
+        <input type="reset" value="clear">
+
+    </form>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/RVjERXrdues" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</body>
+</html>
